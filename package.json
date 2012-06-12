@@ -1,0 +1,30 @@
+{
+	"name": "ping-wrapper2",
+	"version": "0.0.1",
+	"description": "Native wrapper for ping",
+	"homepage": "https://github.com/sebastianmckenzie/ping-wrapper",
+	"contributors": [
+		"Sebastian McKenzie <sebmck@gmail.com>"
+	],
+	"keywords": [
+		"ping"
+	],
+	"dependencies": {
+		"underscore": "*",
+		"underscore.string": "*"
+	},
+	"main": "./ping",
+	"engines": {
+		"node": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sebastianmckenzie/ping-wrapper.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sebastianmckenzie/ping-wrapper/issues"
+	},
+	"licenses" : [
+		{ "type" : "WTFPL" }
+	]
+}
