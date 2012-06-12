@@ -25,9 +25,9 @@
       if (options == null) {
         options = {};
       }
-      this.options = _.extend(options, {
+      this.options = _.defaults({
         count: 10
-      });
+      }, options);
       this.num = 0;
       this.spawn = child.spawn('ping', [target, "-c " + this.options.count]);
       this.spawn.stdout.on('data', function(data) {
