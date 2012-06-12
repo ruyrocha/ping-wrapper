@@ -4,7 +4,7 @@ Native wrapper for ping.
 
 ## Install ##
 
-    npm install ping-wrapper
+    npm install ping-wrapper2
 
 ## Example  ##
 
