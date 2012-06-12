@@ -7,8 +7,7 @@ EventEmitter = events.EventEmitter
 
 class module.exports extends EventEmitter
 	constructor: (target, options={}) ->
-		@options = _.extend options,
-			count: 10
+		@options = _.defaults count: 10, options
 		@num = 0
 		@spawn = child.spawn 'ping', [target, "-c #{@options.count}"]
 		@spawn.stdout.on 'data', (data) =>
