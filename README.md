@@ -8,7 +8,7 @@ Native wrapper for ping.
 
 ## Example  ##
 
-```coffeescript
+```javascript
 var ping = require('ping-wrapper2');
 var exec = ping('google.com', { count: 20 }); // default 10 packets
 
