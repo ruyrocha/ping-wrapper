@@ -1,6 +1,6 @@
 {
 	"name": "ping-wrapper2",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Native wrapper for ping",
 	"homepage": "https://github.com/sebastianmckenzie/ping-wrapper",
 	"contributors": [
@@ -9,10 +9,6 @@
 	"keywords": [
 		"ping"
 	],
-	"dependencies": {
-		"underscore": "*",
-		"underscore.string": "*"
-	},
 	"main": "./ping",
 	"engines": {
 		"node": "*"

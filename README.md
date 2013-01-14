@@ -9,29 +9,28 @@ Native wrapper for ping.
 ## Example  ##
 
 ```coffeescript
-Ping = require 'ping-wrapper2'
+var ping = require('ping-wrapper2');
+var exec = ping('google.com', { count: 20 }); // default 10 packets
 
-ping = new Ping 'google.com'
+ping.on('data', function(data){
+	console.log(data);
+	// { no: 1, bytes: 64, time: 54, ttl: 1 }
+});
 
-ping.on 'data', (data) ->
-	console.log data
-
-ping.on 'exit', (data) ->
-	console.log data
+ping.on('exit', function(data){
+	console.log(data);
+	// { sent: 10, recieved: 10, loss: 0, time: 9010 }
+});
 ```
 
 ## License ##
 
-               DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-                       Version 2, December 2004 
+(The MIT License)
 
-    Copyright (C) 2012 Sebastian McKenzie <sebmck@gmail.com> 
+Copyright (c) 2009-2012 Sebastian McKenzie <sebmck@gmail.com>
 
-    Everyone is permitted to copy and distribute verbatim or modified 
-    copies of this license document, and changing it is allowed as long 
-    as the name is changed. 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-               DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-      TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-     0. You just DO WHAT THE FUCK YOU WANT TO. 
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
