@@ -1,6 +1,6 @@
 {
 	"name": "ping-wrapper2",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Native wrapper for ping",
 	"homepage": "https://github.com/sebastianmckenzie/ping-wrapper",
 	"contributors": [
@@ -21,6 +21,6 @@
 		"url": "https://github.com/sebastianmckenzie/ping-wrapper/issues"
 	},
 	"licenses" : [
-		{ "type" : "WTFPL" }
+		{ "type" : "MIT" }
 	]
 }
