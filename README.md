@@ -19,7 +19,7 @@ ping.on('data', function(data){
 
 ping.on('exit', function(data){
 	console.log(data);
-	// { sent: 10, recieved: 10, loss: 0, time: 9010 }
+	// { sent: 10, received: 10, loss: 0, time: 9010 }
 });
 ```
 

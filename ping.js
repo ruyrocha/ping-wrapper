@@ -21,7 +21,7 @@ module.exports = function(target, options){
 				if (match) {
 					obj.emit('exit', {
 						sent: +match[1],
-						recieved: +match[2],
+						received: +match[2],
 						loss: +match[3],
 						time: +match[4]
 					});
